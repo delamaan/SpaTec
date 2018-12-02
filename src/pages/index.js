@@ -1,18 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
-import Image from '../components/image'
+import oceanView from '../images/ocean-view.jpg'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <p>West Michigan's Local Repairman, Service Company and Maintenance Contractor for all brands of Commercial and Residential Custom Installed or Portable Spas & Hot Tubs, Whirlpool, Jetted & Air Bath Tubs, Luxury Shower Systems, Steam Baths, Saunas, Swimming & Lap Pools, Swim Spas, Spa Pedicure Chairs & Baptismal Immersion Systems for Grand Rapids, Muskegon, Grand Haven, Holland to Kalamazoo, Lansing and more.</p>
+    <img src={oceanView} alt="ocean view" />
   </Layout>
 )
 

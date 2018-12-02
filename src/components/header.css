@@ -1,0 +1,93 @@
+.header {
+  color: white;
+  background-color: #0e283c;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 0px 0px 20px 4px #0e283ca8;
+}
+
+.header .mobileMenu {
+  display: none;
+}
+
+.header .navigation {
+  display: flex;
+}
+
+.header .logo {
+  width: 380px;
+  height: 98px;
+}
+
+.header .icon {
+  width: 30px;
+  margin-top: 9px;
+  filter: invert(100%);
+}
+
+.header nav {
+  margin: 0 auto;
+  max-width: 1408px;
+  padding: 16px;
+}
+
+.header nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: block;
+  height: 98px;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li:first-child {
+  margin-left:8px;
+}
+
+.header nav ul li:last-child {
+  margin-right:8px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 98px;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .header .mobileMenu {
+      display: flex;
+    }
+
+    .header .navigation {
+      display: none;
+    }
+
+    .header .logo {
+      width: 186px;
+      height: 48px;
+    }
+
+    .header nav {
+      padding: 8px;
+    }
+
+    .header nav ul li {
+      height: 48px;
+    }
+
+    .header nav ul li a {
+      line-height: 48px;
+    }
+}

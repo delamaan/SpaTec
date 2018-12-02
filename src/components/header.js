@@ -1,33 +1,27 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import './header.css'
+import logo from '../images/logo.png'
+import hamburger from '../images/hamburger.png'
+import search from '../images/search.png'
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <div className="header">
+    <nav>
+      <ul className="mobileMenu">
+        <li><img className="icon" src={hamburger} alt="main menu" /></li>
+        <li><a href="/"><img className="logo" src={logo} alt="spa tec logo" /></a></li>
+        <li><img className="icon" src={search} alt="search" /></li>
+      </ul>
+      <ul className="navigation">
+        <li><a href="/"><img className="logo" src={logo} alt="spa tec logo" /></a></li>
+        <li><a href="/">Service</a></li>
+        <li><a href="/">Hot Tubs</a></li>
+        <li><a href="/">Whirlpools</a></li>
+        <li><a href="/">Saunas</a></li>
+        <li><a href="/">Swimming Pools</a></li>
+      </ul>
+    </nav>
   </div>
 )
 
