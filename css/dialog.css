@@ -1,0 +1,17 @@
+.dialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0F243F;
+  color: white;
+  font-size: 3em;
+  padding: 1em;
+  transition: opacity 1s;
+  transition-delay: 1s;
+  opacity: 0.9;
+}
+
+.dialog.decay {
+  opacity: 0;
+}

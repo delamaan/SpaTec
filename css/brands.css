@@ -1,0 +1,17 @@
+.brands li {
+  margin: 1em;
+  /* width: 340px; */
+  width: 170px;
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0px 1px 6px -1px inset black;
+}
+
+@media (max-width:500px) {
+  .brands li {
+    margin: 0.5em;
+    padding: 1em;
+    width: 110px;
+  }
+}
